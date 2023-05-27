@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Button } from 'react-bootstrap';
 
-function Child (props) {
+function Child(props) {
     return (
-        <div>
+        <>
             <h1>Child</h1>
-            <button onClick={()=>props.greet('child')}>Greeting</button>
-        </div>
-    )
+            <Button variant="primary" onClick={() => props.greet('child')}>
+                Greeting
+            </Button>
+        </>
+    );
 }
 
-export default Child
+export default Child;

@@ -1,16 +1,19 @@
-import React from 'react'
-import Child from './Child'
+import React from 'react';
+import Child from './Child';
+import { Container } from 'react-bootstrap';
 
-function Parent () {
+function Parent(props) {
     const handleGreet = (childName) => {
-        alert(`good morning ${childName}`);
-    }
+        alert(`Good morning ${childName}`);
+    };
+
     return (
-        <div>
-            <h1>Parent</h1>
-            <Child greet={handleGreet}/>
-        </div>
-    )
+        <Container>
+            <h1>Parent {props.children}</h1>        // There is pass child as props
+            <Child greet={handleGreet} />
+            <hr />
+        </Container>
+    );
 }
 
-export default Parent
+export default Parent;

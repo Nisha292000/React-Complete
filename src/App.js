@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <StateComponent age={20}/>
-      <Parent/>
+      <Parent>This is child as Props</Parent>
       <Toggle/>
       <Form/>
     </div>
