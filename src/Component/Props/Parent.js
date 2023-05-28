@@ -9,7 +9,7 @@ function Parent(props) {
 
     return (
         <Container>
-            <h1>Parent {props.children}</h1>        // There is pass child as props
+            <h1>Parent {props.children}</h1>       {/* There is pass child as props */}
             <Child greet={handleGreet} />
             <hr />
         </Container>
