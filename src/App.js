@@ -3,6 +3,8 @@ import Form from './Component/Form'
 import Parent from './Component/Props/Parent';
 import Toggle from './Component/Toggle';
 import StateComponent from './Component/stateComponent';
+import StateHook from './Component/Hooks/StateHook';
+import EffectHook from './Component/Hooks/EffectHook';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Parent>This is child as Props</Parent>
       <Toggle/>
       <Form/>
+      <StateHook/>
+      <EffectHook/>
     </div>
   );
 }
