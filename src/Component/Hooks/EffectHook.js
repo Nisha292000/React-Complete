@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Button, Container, Table } from 'react-bootstrap';
 
 const EffectHook = () => {
-    const [content, setContent] = useState('Posts')
+    const [content, setContent] = useState('Users')
     const [count, setCount] = useState(0)
     const [data, setData] = useState([])
 
