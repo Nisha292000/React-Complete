@@ -6,6 +6,8 @@ import StateComponent from './Component/stateComponent';
 import StateHook from './Component/Hooks/StateHook';
 import EffectHook from './Component/Hooks/EffectHook';
 import A from './Component/Hooks/ContextHook/A';
+import ReducerHook from './Component/Hooks/ReducerHook';
+import MemoHook from './Component/Hooks/MemoHook';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <StateHook />
       <EffectHook />
       <A/>
+      <ReducerHook/>
+      <MemoHook/>
     </div>
   );
 }

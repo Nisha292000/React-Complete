@@ -23,6 +23,7 @@ const EffectHook = () => {
 
     return (
         <Container>
+            <h1>useEffect Hook</h1>
             <Button variant="secondary" className='m-2' onClick={() => setCount(count + 1)}>Count: {count}</Button>
             <Button variant="warning" className='m-2' onClick={() => setContent('Posts')}>Posts</Button>
             <Button variant="info" className='m-2' onClick={() => setContent('Users')}>Users</Button>
