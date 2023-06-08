@@ -21,9 +21,9 @@ const MemoHook = () => {
     return (
         <Container>
             <h1>useMemo Hook</h1>
-            <Button variant="success" className="m-2" onClick={increase}>Count one {countOne}</Button>
+            <Button variant="secondary" className="m-2" onClick={increase}>Count one {countOne}</Button>
             {isEven ? 'Even' : 'Odd'}
-            <Button variant="primary" className="m-2" onClick={decrease}>Count two {countTwo}</Button>
+            <Button variant="dark" className="m-2" onClick={decrease}>Count two {countTwo}</Button>
             <hr />
         </Container>
     );

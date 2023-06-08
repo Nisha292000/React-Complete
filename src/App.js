@@ -8,6 +8,8 @@ import EffectHook from './Component/Hooks/EffectHook';
 import A from './Component/Hooks/ContextHook/A';
 import ReducerHook from './Component/Hooks/ReducerHook';
 import MemoHook from './Component/Hooks/MemoHook';
+import ParentCallBack from './Component/Hooks/CallBackHook/ParentCallBack';
+import RefHook from './Component/Hooks/RefHook';
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
       <Form />
       <StateHook />
       <EffectHook />
-      <A/>
-      <ReducerHook/>
-      <MemoHook/>
+      <A />
+      <ReducerHook />
+      <MemoHook />
+      <ParentCallBack />
+      <RefHook/>
     </div>
   );
 }
