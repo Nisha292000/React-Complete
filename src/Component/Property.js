@@ -3,6 +3,7 @@ import React from 'react';
 import banner from '../assets/banner.jpeg';
 import './property.css';
 import { Layout } from 'antd';
+import { Container } from 'react-bootstrap';
 const { Content } = Layout;
 
 
@@ -21,15 +22,14 @@ const Property = () => {
                 </Col>
             </Row>
 
-            <Layout>
-                <Content>
-                    <Row>
-                        <Col span={10}>col-12</Col>
-                        <Col span={10}>col-12</Col>
-                    </Row>
-                </Content>
-            </Layout>
-
+            <Container className='mt-5'>
+                <Row className='d-flex justify-content-between'>
+                    <Col span={15} className='bg-danger'>
+                        <Col></Col>
+                    </Col>
+                    <Col span={7} className='bg-danger'>col-12</Col>
+                </Row>
+            </Container>
         </>
     );
 };
